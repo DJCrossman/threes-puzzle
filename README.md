@@ -22,4 +22,15 @@ threes-puzzle
 
    What are my three numbers?
 
+============
+Record
+============
+Condition 	Estimate Time		Actual Time		Person
+	1 			X					X				Nam
+	2 			X					X				Dylan
+	3 			X					X				Dylan
+	4 			X					X				David
+	5 			X					X				Nam
+	6 			X					X				David
 
+Total Estimate time = X		Total time = X
