@@ -24,9 +24,10 @@ int main () {
 	int KarimNums [3] = {0,0,0};
 	// numbers stored
 	int KarimCount = 0;
-
+	cout << "Start Program" << endl;
 	for (int i = 102; i < 999; i+=3)
 	{
+		cout << "Running..." << endl;
 		if (KarimNums[2] != NULL)
 		{
 			break;
@@ -52,6 +53,7 @@ int main () {
 
 bool isThreeFirstOrLast (int number)
 {
+	
 	if((number%10 == 3) || (number/100 == 3))
 		return true;
 	else
