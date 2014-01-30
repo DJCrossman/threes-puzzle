@@ -21,27 +21,27 @@ bool ifPrime(int num);
 
 int main () {
 	// array of satisfied numbers
-	int KarimNums [3];
+	int KarimNums [3] = {0,0,0};
 	// numbers stored
 	int KarimCount = 0;
-	for (int i = 102; i < 999; i+3)
+
+	for (int i = 102; i < 999; i+=3)
 	{
 		if (KarimNums[2] != NULL)
 		{
 			break;
 		}
 		else {
-
-		/*else {
 			int count = 0;
 			if((isThreeFirstOrLast(i) + isDoubleSinglePrime(i) + isSingleDoublePrime(i) + isCubeFind(i) + isTriangular(i) + isProductDistinctPrimes(i)) == 3) {
 				KarimNums[KarimCount] = i;
 				KarimCount++;
 			}
-		}*/
+		}
+
 	}
 
-	for(int i = 0; i < 900; i++){
+	for(int i = 0; i < 3; i++){
 
 		cout << KarimNums[i] << endl;
 
@@ -50,7 +50,7 @@ int main () {
 	return 0;
 }
 
-bool isThreeFirstOrLast (int& number)
+bool isThreeFirstOrLast (int number)
 {
 	if((number%10 == 3) || (number/100 == 3))
 		return true;
@@ -59,11 +59,11 @@ bool isThreeFirstOrLast (int& number)
 };
 bool isDoubleSinglePrime (int number)
 {
-	return true;
+	return (ifPrime(number/10) && ifPrime(number%10));
 };
 bool isSingleDoublePrime (int number)
 {
-	return true;
+	return (ifPrime(number%10) && ifPrime(number/10));
 };
 bool isCubeFind (int number)
 {
