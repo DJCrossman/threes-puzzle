@@ -24,9 +24,10 @@ int main () {
 	int KarimNums [3] = {0,0,0};
 	// numbers stored
 	int KarimCount = 0;
-
+	cout << "Start Program" << endl;
 	for (int i = 102; i < 999; i+=3)
 	{
+		cout << "Running..." << endl;
 		if (KarimNums[2] != NULL)
 		{
 			break;
@@ -52,6 +53,7 @@ int main () {
 
 bool isThreeFirstOrLast (int number)
 {
+	
 	if((number%10 == 3) || (number/100 == 3))
 		return true;
 	else
@@ -67,11 +69,27 @@ bool isSingleDoublePrime (int number)
 };
 bool isCubeFind (int number)
 {
-	return true;
+
+	int cube = int(cbrt(number));
+	//int cubethree = int(cbrt(number + 3));
+	if ((cube*cube*cube) == number){
+		return true;
+	}
+	else{
+		return false;
+	}
 };
 bool isTriangular (int number)
 {
-	return true;
+	int tri = int(sqrt(8 * number + 1));
+
+	if ((tri*tri) == (8 * number + 1)){
+		return 1;
+	}
+	else{
+		return 0;
+
+	}
 };
 bool isProductDistinctPrimes (int number)
 {
