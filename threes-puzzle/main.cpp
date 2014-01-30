@@ -67,11 +67,27 @@ bool isSingleDoublePrime (int number)
 };
 bool isCubeFind (int number)
 {
-	return true;
+
+	int cube = int(cbrt(number));
+	//int cubethree = int(cbrt(number + 3));
+	if ((cube*cube*cube) == number){
+		return true;
+	}
+	else{
+		return false;
+	}
 };
 bool isTriangular (int number)
 {
-	return true;
+	int tri = int(sqrt(8 * number + 1));
+
+	if ((tri*tri) == (8 * number + 1)){
+		return 1;
+	}
+	else{
+		return 0;
+
+	}
 };
 bool isProductDistinctPrimes (int number)
 {
