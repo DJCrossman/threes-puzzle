@@ -43,8 +43,8 @@ int main () {
 
 	return 0;
 }
-
 */
+
 bool isThreeFirstOrLast (int number)
 {
 	
@@ -59,7 +59,7 @@ bool isDoubleSinglePrime (int number)
 }
 bool isSingleDoublePrime (int number)
 {
-	return (ifPrime(number%10) && ifPrime(number/10));
+	return (ifPrime(number%100) && ifPrime(number/100));
 }
 bool isCubeFind (int number)
 {
